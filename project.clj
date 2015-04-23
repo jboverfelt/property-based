@@ -6,4 +6,5 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [org.clojure/test.check "0.7.0"]
                  [org.clojure/data.json "0.2.6"]
+                 [org.clojure/data.fressian "0.2.0"]
                  [org.clojure/data.priority-map "0.0.7"]])
