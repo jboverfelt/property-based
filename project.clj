@@ -7,4 +7,5 @@
                  [org.clojure/test.check "0.7.0"]
                  [org.clojure/data.json "0.2.6"]
                  [org.clojure/data.fressian "0.2.0"]
-                 [org.clojure/data.priority-map "0.0.7"]])
+                 [org.clojure/data.priority-map "0.0.7"]
+                 [org.clojure/data.avl "0.0.12"]])
