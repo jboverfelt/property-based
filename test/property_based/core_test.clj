@@ -33,5 +33,5 @@
 
 (defspec avl-sorted-maps-same-as-builtin
   500
-  (prop/for-all [value (gen/map gen/string gen/string)]
-    (= (into sorted-map value) (into avl/sorted-map value))))
+  (prop/for-all [value (gen/map gen/int gen/string)]
+    (= (into (sorted-map) value) (into (avl/sorted-map) value))))
