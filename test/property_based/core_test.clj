@@ -7,6 +7,7 @@
             [clojure.test.check.properties :as prop]
             [clojure.test.check.clojure-test :refer [defspec]]))
 
+; round trip
 (defspec encode-decode-json-produces-original
   500
   (prop/for-all [value (gen/map gen/string gen/string)]
@@ -17,6 +18,7 @@
   (prop/for-all [value (gen/map gen/string gen/string)]
     (= value (fr/read (fr/write value)))))
 
+; input/output reservation
 (defn ascending? [coll]
  (every? (fn [[a b]] (<= (.compareTo a b) 0))
         (partition 2 1 coll)))
