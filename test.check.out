@@ -1,0 +1,8 @@
+lein test property-based.core-test
+{:test-var "avl-sorted-maps-same-as-builtin", :result true, :num-tests 500, :seed 1430351854663}
+{:test-var "pri-map-values-are-sorted", :result true, :num-tests 500, :seed 1430351857340}
+{:test-var "encode-decode-json-produces-original", :result true, :num-tests 500, :seed 1430351862180}
+{:test-var "encode-decode-fressian-produces-original", :result true, :num-tests 500, :seed 1430351871231}
+
+Ran 4 tests containing 4 assertions.
+0 failures, 0 errors.
